@@ -1,17 +1,16 @@
-**Experiment-1.1: Contains Duplicate (LeetCode 217)**
+Experiment-1.1: Contains Duplicate (LeetCode 217)
 
-**Aim:**  
+Aim:  
 Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.
 
-**Algorithm:**
-1. Sort the array `nums`.
-2. Traverse the array from index `1` to `n-1`.
+Algorithm:
+1. Sort the array nums.
+2. Traverse the array from index 1 to n-1.
 3. Compare each element with its previous element.
-4. If two adjacent elements are equal, return `True` (duplicate found).
-5. If the traversal completes without finding duplicates, return `False`.
+4. If two adjacent elements are equal, return True (duplicate found).
+5. If the traversal completes without finding duplicates, return False.
 
-**Code:**
-```python
+Code:
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         nums.sort()
